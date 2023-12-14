@@ -81,8 +81,8 @@ const Catalog = () => {
         {filteredProducts.map((product) => (
           <Col key={product.id} xs={24} sm={12} md={8} lg={6}>
             <Card title={product.name} style={{ width: '100%' }}>
+              <img src={product.images}></img>
               <p>Category: {product.category.name}</p>
-              <p>Price: ${product.price}</p>
             </Card>
           </Col>
         ))}
